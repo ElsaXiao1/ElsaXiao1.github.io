@@ -67,6 +67,25 @@ body{
   transform: translate(-50%, -50%);
 }
 
+section{
+    padding: 5rem 0;
+}
+.section-title{
+    padding-bottom: 4rem;
+    position: relative;
+}
+.sub-title{
+    color: var(--secondColor);
+    font-size: 11px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -0-transform: translate(-50%,-50%);
+}
 /*HERO SECTION*/
   #hero{
       background-image: url("images/bg.jpg");
