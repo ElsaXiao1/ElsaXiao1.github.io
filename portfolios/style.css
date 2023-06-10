@@ -238,6 +238,10 @@ form input,textarea{
     color: rgba(150, 150, 150, 0.7);
 }
 
+p {
+  text-align: center;
+}
+
 @media sreen and(max-width:974px){
   .contact-bg{
     height: 40vh;
