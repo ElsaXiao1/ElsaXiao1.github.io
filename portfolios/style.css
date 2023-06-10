@@ -222,6 +222,12 @@ section{
    color: #FFC300;
    font-size: 16px;
 }
+@media screen and (max-width: 768px) {
+  .item-description {
+    display: block;
+    text-align: center;
+  }
+}
 
 /*CONTACT SECTION*/
 .contact-bg{
