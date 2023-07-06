@@ -10,6 +10,11 @@
   scroll-behavior: smooth;
 }
 
+.btn {
+  display: block;
+  margin-bottom: 10px;
+}
+
 body {
   min-height: 100vh;
   overflow-x: hidden;
@@ -70,11 +75,6 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
-
-.btn {
-  display: block;
-  margin-bottom: 10px;
 }
 
 section::before {
