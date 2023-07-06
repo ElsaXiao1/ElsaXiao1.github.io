@@ -72,6 +72,11 @@ section {
   overflow: hidden;
 }
 
+.btn {
+  display: block;
+  margin-bottom: 10px;
+}
+
 section::before {
   content: '';
   position: absolute;
