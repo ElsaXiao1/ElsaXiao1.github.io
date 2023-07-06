@@ -1,0 +1,194 @@
+{
+  "dimension": [
+                 {
+                   "label": "GHO",
+                   "display": "Indicator"
+                 },
+                 {
+                   "label": "PUBLISHSTATE",
+                   "display": "PUBLISH STATES"
+                 },
+                 {
+                   "label": "YEAR",
+                   "display": "Year"
+                 },
+                 {
+                   "label": "REGION",
+                   "display": "WHO region"
+                 },
+                 {
+                   "label": "COUNTRY",
+                   "display": "Countries, territories and areas"
+                 }
+               ],
+    "fact": [
+              {
+                "dims": {
+                          "COUNTRY": "Australia",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "70"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bangladesh",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chile",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Costa Rica",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominican Republic",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Eswatini",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Fiji",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "France",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "47"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Hungary",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Italy",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "35"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Japan",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "49"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jordan",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Maldives",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mauritius",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Myanmar",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Netherlands",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "43"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Qatar",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sweden",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "37"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Switzerland",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "17"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Togo",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tunisia",
+                          "GHO": "Total number of published dementia research output",
+                          "YEAR": "2017"
+                        },
+                "Value": "2"
+              }
+      ]
+}

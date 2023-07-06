@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>D3.js Bar Chart</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    svg {
+      width: 600px;
+      height: 400px;
+    }
+
+    .axis text {
+      font-size: 12px;
+      fill: #999;
+    }
+
+    .bar rect {
+      fill: steelblue;
+    }
+
+    .bar text {
+      font-size: 12px;
+      fill: #fff;
+      text-anchor: middle;
+    }
+  </style>
+</head>
+<body>
+  <h1>阿尔茨海默症患者研究成果</h1>
+  <svg id="chart"></svg>
+
+  <script>
+    // JSON 数据
+    var data = [
+      { "country": "Australia", "2017": 70 },
+      { "country": "Japan", "2017": 49 },
+      { "country": "France", "2017": 47 },
+      { "country": "Netherlands", "2017": 43 },
+      { "country": "Sweden", "2017": 37 },
+      { "country": "Italy", "2017": 35 },
+      { "country": "Switzerland", "2017": 17 },
+      { "country": "Tunisia", "2017": 2 },
+      // ... 添加更多数据
+    ];
+
+    // 创建比例尺
+    var xScale = d3.scaleBand()
+                   .domain(data.map(function(d) { return d.country; }))
+                   .range([0, 300])
+                   .padding(0.1);
+
+    var yScale = d3.scaleLinear()
+                   .domain([0, d3.max(data, function(d) { return d["2017"]; })])
+                   .range([200, 0]);
+
+    // 创建 SVG 容器
+    var svg = d3.select("#chart")
+                .attr("width", 400)
+                .attr("height", 300);
+
+    // 创建可视化元素
+    var bars = svg.selectAll("rect")
+                  .data(data)
+                  .enter()
+                  .append("rect")
+                  .attr("x", function(d) { return xScale(d.country); })
+                  .attr("y", function(d) { return yScale(d["2017"]); })
+                  .attr("width", xScale.bandwidth())
+                  .attr("height", function(d) { return 200 - yScale(d["2017"]); })
+                  .attr("fill", "steelblue")
+                  .append("title") // 添加鼠标悬停时显示的标题
+                  .text(function(d) { return "Country: " + d.country + ", 2017: " + d["2017"]; });
+
+    // 添加坐标轴标签
+    svg.append("text")
+       .attr("x", 200)
+       .attr("y", 250)
+       .attr("text-anchor", "middle")
+       .text("Country");
+
+    svg.append("text")
+       .attr("x", -150)
+       .attr("y", 20)
+       .attr("text-anchor", "middle")
+       .attr("transform", "rotate(-90)")
