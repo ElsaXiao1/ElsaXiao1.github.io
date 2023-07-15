@@ -56,5 +56,6 @@ $(document).ready(function () {
         });
     }
 
-
+    // Update year in copyright text
+    document.querySelector('.tm-current-year').textContent = new Date().getFullYear();
 });
